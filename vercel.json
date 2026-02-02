@@ -8,10 +8,6 @@
   "git": {
     "deploymentEnabled": true
   },
-  "ignoredPaths": [
-    "assets/**/*.(png|jpg|jpeg|gif|svg|ico|webp|mp4|webm|ogg|mp3|wav|flac|aac)",
-    "video.mp4"
-  ],
   "rewrites": [
     {
       "source": "/((?!.*\\.(css|js)$).*)",
