@@ -21,7 +21,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(mp4|webm|ogg|mp3|wav|flac|aac))",
+      "source": "/(.*\\.mp4)",
       "headers": [
         {
           "key": "Cache-Control",
