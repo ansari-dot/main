@@ -3,9 +3,18 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": "vite",
+  "functions": {},
+  "cleanUrls": true,
+  "git": {
+    "deploymentEnabled": true
+  },
+  "ignoredPaths": [
+    "assets/**/*.(png|jpg|jpeg|gif|svg|ico|webp|mp4|webm|ogg|mp3|wav|flac|aac)",
+    "video.mp4"
+  ],
   "rewrites": [
     {
-      "source": "/((?!.*\\.(png|jpg|jpeg|gif|svg|ico|webp|mp4|webm|ogg|mp3|wav|flac|aac|css|js)$).*)",
+      "source": "/((?!.*\\.(css|js)$).*)",
       "destination": "/index.html"
     }
   ]
