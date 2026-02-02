@@ -9,7 +9,7 @@
   },
   "rewrites": [
     {
-      "source": "/((?!.*\\.(css|js)$).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
