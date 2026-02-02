@@ -174,7 +174,7 @@ export const AnimatedCard: React.FC<AnimatedCardProps> = ({
 };
 
 interface StaggeredAnimationProps {
-  children: React.ReactNode[];
+  children: React.ReactNode | React.ReactNode[];
   staggerDelay?: number;
   direction?: 'left' | 'right' | 'up' | 'down';
   className?: string;
@@ -189,6 +189,9 @@ export const StaggeredAnimation: React.FC<StaggeredAnimationProps> = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
+
+  // Convert children to array if it's not already
+  const childrenArray = React.Children.toArray(children);
 
   useEffect(() => {
     const element = ref.current;
@@ -229,7 +232,6 @@ export const StaggeredAnimation: React.FC<StaggeredAnimationProps> = ({
     }
   };
 
-  const childrenArray = React.Children.toArray(children);
   const isContents = className.includes('contents');
 
   if (isContents) {
