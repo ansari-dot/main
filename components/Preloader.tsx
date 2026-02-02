@@ -80,7 +80,7 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
             {/* Logo Circle */}
             <div className="absolute inset-4 bg-slate-900 rounded-full flex items-center justify-center shadow-2xl">
               <motion.img
-                src="/assets/logo.png"
+                src="/logo.png"
                 alt="3Novator Tech"
                 className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
                 animate={{ 

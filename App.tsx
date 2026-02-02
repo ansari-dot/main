@@ -182,7 +182,7 @@ const HomePage: React.FC<{ onNavigate: (p: string) => void; sliderWords: string[
         muted
         playsInline
       >
-        <source src="/assets/video.mp4" type="video/mp4" />
+        <source src="/video.mp4" type="video/mp4" />
       </video>
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/60 z-5"></div>

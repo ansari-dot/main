@@ -27,7 +27,7 @@ export const SERVICES: Service[] = [
     title: 'Web Development',
     description: 'Bespoke React, Next.js, and Node.js solutions built for scale and speed.',
     icon: 'Code2',
-    image: '/assets/services/web.jpeg',
+    image: '/services/web.jpeg',
     details: ['Full-stack Architectures', 'Performance Optimization', 'E-commerce Solutions']
   },
   {
@@ -35,7 +35,7 @@ export const SERVICES: Service[] = [
     title: 'AI Solutions',
     description: 'Transform your workflow with intelligent chatbots and ML-driven automation.',
     icon: 'Cpu',
-    image: '/assets/services/AI.jpeg',
+    image: '/services/AI.jpeg',
     details: ['LLM Integration', 'Process Automation', 'Predictive Analytics']
   },
   {
@@ -43,7 +43,7 @@ export const SERVICES: Service[] = [
     title: 'SaaS Development',
     description: 'From MVP to enterprise-grade subscription platforms.',
     icon: 'Layout',
-    image: '/assets/services/SaaS.jpeg',
+    image: '/services/SaaS.jpeg',
     details: ['Subscription Management', 'Multi-tenancy', 'Cloud Scalability']
   },
   {
@@ -51,7 +51,7 @@ export const SERVICES: Service[] = [
     title: 'Digital Marketing & SEO',
     description: 'Dominate search results and scale your brand with comprehensive digital strategies.',
     icon: 'TrendingUp',
-    image: '/assets/services/SEO.jpeg',
+    image: '/services/SEO.jpeg',
     details: ['SEO Strategy & Optimization', 'PPC Management', 'Social Media Marketing', 'Brand Positioning']
   },
   {
@@ -59,7 +59,7 @@ export const SERVICES: Service[] = [
     title: 'Creative Design',
     description: 'Stunning marketing collateral and brand identity via modern design tools.',
     icon: 'Palette',
-    image: '/assets/services/Graphic.jpeg',
+    image: '/services/Graphic.jpeg',
     details: ['Social Media Kits', 'Pitch Decks', 'Brand Assets']
   },
   {
@@ -67,7 +67,7 @@ export const SERVICES: Service[] = [
     title: 'App Development',
     description: 'Native and cross-platform mobile applications built for performance and user experience.',
     icon: 'Smartphone',
-    image: '/assets/services/App.jpeg',
+    image: '/services/App.jpeg',
     details: ['iOS & Android Development', 'React Native Apps', 'App Store Optimization']
   },
   {
@@ -75,7 +75,7 @@ export const SERVICES: Service[] = [
     title: 'Cloud Computing',
     description: 'Scalable cloud infrastructure and migration services for enterprise growth.',
     icon: 'Cloud',
-    image: '/assets/services/Cloud.jpeg',
+    image: '/services/Cloud.jpeg',
     details: ['Cloud Migration', 'DevOps Solutions', 'Serverless Architecture']
   },
   {
@@ -83,7 +83,7 @@ export const SERVICES: Service[] = [
     title: 'Web Scraping',
     description: 'Automated data extraction and web intelligence solutions for business insights.',
     icon: 'Database',
-    image: '/assets/services/Scapring.jpeg',
+    image: '/services/Scapring.jpeg',
     details: ['Data Extraction', 'Market Intelligence', 'API Development', 'Data Processing']
   }
 ];
@@ -93,7 +93,7 @@ export const PROJECTS: Project[] = [
     id: '1',
     title: 'AI Trip Advisor',
     category: 'AI & Mobile',
-    image: '/assets/projects/TripAdviser.png',
+    image: '/projects/TripAdviser.png',
     description: 'Intelligent travel planning application with AI recommendations, available as both web and mobile app for seamless trip management. Built with MERN stack for web services.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'OpenAI', 'React Native', 'Mobile App'],
     liveUrl: 'https://lumina-khaki-five.vercel.app/',
@@ -103,7 +103,7 @@ export const PROJECTS: Project[] = [
     id: '2',
     title: 'Shehrity',
     category: 'Service Platform',
-    image: '/assets/projects/Shehrity.png',
+    image: '/projects/Shehrity.png',
     description: 'Comprehensive service provider platform connecting users with various physical and digital services through multiple specialized portals. Full MERN stack implementation.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'MERN', 'Service Management'],
     liveUrl: 'https://www.shehrity.com/',
@@ -113,7 +113,7 @@ export const PROJECTS: Project[] = [
     id: '3',
     title: 'Edu Prep',
     category: 'Educational SaaS',
-    image: '/assets/projects/EduPerp.png',
+    image: '/projects/EduPerp.png',
     description: 'A web platform designed to help students prepare for medical entrance exams (like MDCAT) with organized notes and multiple-choice practice questions. Built as an educational web app to help learners quickly revise key topics and track their progress. Learning SaaS platform with MERN and Progress.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'MERN', 'Progress', 'SaaS', 'Education', 'MDCAT'],
     liveUrl: 'https://edu-wine-three.vercel.app/',
@@ -123,7 +123,7 @@ export const PROJECTS: Project[] = [
     id: '4',
     title: 'Freely Go North',
     category: 'Tourism Platform',
-    image: '/assets/projects/FreelyGoNorth.png',
+    image: '/projects/FreelyGoNorth.png',
     description: 'Tourism website where users can buy or book different hotel trips, tour guides, and other travel services. Provides comprehensive services to tourists with scenic north-themed design and modern booking system.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'MERN', 'Tourism', 'Booking', 'Travel Services'],
     liveUrl: 'https://freelygonorth.vercel.app/tours',
@@ -133,7 +133,7 @@ export const PROJECTS: Project[] = [
     id: '5',
     title: 'SparkBright',
     category: 'Cleaning Services',
-    image: '/assets/projects/SparkBright.png',
+    image: '/projects/SparkBright.png',
     description: 'Professional cleaning service provider website showcasing different cleaning services for residential and commercial clients. Clean, modern design with service listings and booking information.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'MERN', 'Cleaning Services', 'Service Provider'],
     liveUrl: 'https://www.sparkbrightcleaning.com/',
@@ -143,7 +143,7 @@ export const PROJECTS: Project[] = [
     id: '6',
     title: 'Black Panther Batteries',
     category: 'Static Website',
-    image: '/assets/projects/blackpantherbatteries.png',
+    image: '/projects/blackpantherbatteries.png',
     description: 'Static React website for a company providing professional battery repairing services. Clean, responsive design showcasing service offerings and company information.',
     tags: ['React', 'Static Website', 'Battery Services', 'Repair Services', 'Company Website'],
     liveUrl: 'https://www.blackpanther-batteries.com/',
@@ -152,9 +152,9 @@ export const PROJECTS: Project[] = [
 ];
 
 export const TEAM = [
-  { name: 'Haris Hussain', role: 'CEO', bio: 'AI specialist leading the vision and strategic direction of 3Novator Tech with cutting-edge artificial intelligence solutions.', avatar: '/assets/team/HarisHussain.jpeg' },
-  { name: 'Arsalan Saleem', role: 'CO-FOUNDER', bio: 'Full-stack MERN developer with expertise in Hostinger, WordPress, and comprehensive web development solutions.', avatar: '/assets/team/arsalansaleem.jpeg' },
-  { name: 'Umar Mustafa', role: 'CO-FOUNDER', bio: 'Full-stack developer specializing in MERN stack and Flutter for cross-platform mobile applications.', avatar: '/assets/team/umar.jpeg' }
+  { name: 'Haris Hussain', role: 'CEO', bio: 'AI specialist leading the vision and strategic direction of 3Novator Tech with cutting-edge artificial intelligence solutions.', avatar: '/team/HarisHussain.jpeg' },
+  { name: 'Arsalan Saleem', role: 'CO-FOUNDER', bio: 'Full-stack MERN developer with expertise in Hostinger, WordPress, and comprehensive web development solutions.', avatar: '/team/arsalansaleem.jpeg' },
+  { name: 'Umar Mustafa', role: 'CO-FOUNDER', bio: 'Full-stack developer specializing in MERN stack and Flutter for cross-platform mobile applications.', avatar: '/team/umar.jpeg' }
 ];
 
 export const TIMELINE = [

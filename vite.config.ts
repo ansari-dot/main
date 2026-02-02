@@ -20,6 +20,7 @@ export default defineConfig(({ mode }) => {
         }
       },
       build: {
+        assetsDir: 'assets',
         rollupOptions: {
           output: {
             manualChunks: {
