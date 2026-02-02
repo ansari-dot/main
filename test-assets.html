@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset Test</title>
+</head>
+<body>
+    <h1>Testing Assets</h1>
+    
+    <h2>Logo Test:</h2>
+    <img src="/logo.png" alt="Logo" style="max-width: 200px; border: 1px solid red;" onerror="this.style.background='red'; this.alt='FAILED TO LOAD';">
+    
+    <h2>Video Test:</h2>
+    <video controls style="max-width: 400px; border: 1px solid red;" onerror="this.style.background='red';">
+        <source src="/video.mp4" type="video/mp4">
+        Video failed to load
+    </video>
+    
+    <h2>Project Images Test:</h2>
+    <img src="/projects/TripAdviser.png" alt="Trip Advisor" style="max-width: 200px; border: 1px solid red;" onerror="this.style.background='red'; this.alt='FAILED TO LOAD';">
+    <img src="/projects/EduPerp.png" alt="EduPerp" style="max-width: 200px; border: 1px solid red;" onerror="this.style.background='red'; this.alt='FAILED TO LOAD';">
+    
+    <h2>Service Images Test:</h2>
+    <img src="/services/AI.jpeg" alt="AI Service" style="max-width: 200px; border: 1px solid red;" onerror="this.style.background='red'; this.alt='FAILED TO LOAD';">
+    <img src="/services/web.jpeg" alt="Web Service" style="max-width: 200px; border: 1px solid red;" onerror="this.style.background='red'; this.alt='FAILED TO LOAD';">
+    
+    <h2>Team Images Test:</h2>
+    <img src="/team/HarisHussain.jpeg" alt="Haris" style="max-width: 200px; border: 1px solid red;" onerror="this.style.background='red'; this.alt='FAILED TO LOAD';">
+    
+    <script>
+        // Log any asset loading errors
+        window.addEventListener('error', function(e) {
+            console.error('Asset failed to load:', e.target.src, e);
+        }, true);
+    </script>
+</body>
+</html>
