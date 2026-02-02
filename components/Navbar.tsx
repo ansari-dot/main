@@ -23,10 +23,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate, isScr
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'py-1' : 'py-4'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'py-1 mt-4' : 'py-4'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Desktop Navbar */}
-        <div className={`hidden lg:flex glass mx-auto items-center justify-between px-10 rounded-3xl transition-all duration-500 ${isScrolled ? 'max-w-7xl shadow-realistic border-slate-200 py-2' : 'max-w-[90rem] border-transparent bg-transparent backdrop-blur-0 shadow-none py-8'} relative overflow-visible`}>
+        <div className={`hidden lg:flex mx-auto items-center justify-between px-10 rounded-3xl transition-all duration-500 ${isScrolled ? 'glass max-w-7xl shadow-realistic border-slate-200 py-2' : 'max-w-[90rem] bg-transparent backdrop-blur-0 shadow-none border-transparent py-8'} relative overflow-visible`}>
           <div className={`flex items-center gap-4 cursor-pointer group ${isScrolled ? '' : 'absolute left-10 top-1/2 -translate-y-1/2 z-10'}`} onClick={() => onNavigate(PageID.HOME)}>
             <motion.img 
               src="/assets/logo.png" 
