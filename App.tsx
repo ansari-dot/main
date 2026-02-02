@@ -41,7 +41,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ScrollAnimation, AnimatedCard, StaggeredAnimation } from './components/ScrollAnimation';
 import { AdvancedAnimation, CombinedAnimation } from './components/AdvancedAnimation';
 import { TestimonialContainer } from './components/TestimonialVariations';
-import { getAIProjectAssistance } from './services/geminiService';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -56,10 +55,6 @@ const App: React.FC = () => {
   };
 
   const [currentPage, setCurrentPage] = useState<PageID>(getInitialPage());
-  const [isAiOpen, setIsAiOpen] = useState(false);
-  const [aiMessage, setAiMessage] = useState('');
-  const [aiHistory, setAiHistory] = useState<{role: 'user' | 'ai', text: string}[]>([]);
-  const [isAiLoading, setIsAiLoading] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -116,20 +111,6 @@ const App: React.FC = () => {
 
   const handleNavigate = (pageId: string) => {
     setCurrentPage(pageId as PageID);
-  };
-
-  const handleAiChat = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!aiMessage.trim()) return;
-
-    const userMsg = aiMessage;
-    setAiMessage('');
-    setAiHistory(prev => [...prev, { role: 'user', text: userMsg }]);
-    setIsAiLoading(true);
-
-    const response = await getAIProjectAssistance(userMsg);
-    setAiHistory(prev => [...prev, { role: 'ai', text: response }]);
-    setIsAiLoading(false);
   };
 
   const RenderedPage = useMemo(() => {
