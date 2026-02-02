@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       publicDir: 'public',
+      base: mode === 'production' ? '/' : '/',
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
@@ -17,6 +18,7 @@ export default defineConfig(({ mode }) => {
       },
       build: {
         assetsDir: 'assets',
+        copyPublicDir: true,
         rollupOptions: {
           output: {
             manualChunks: {
