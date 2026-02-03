@@ -1,10 +1,1 @@
-# Exclude unused images from deployment
-assets/projects/TripAdviser.png
-assets/projects/Shehrity.png
-assets/projects/EduPerp.png
-assets/projects/FreelyGoNorth.png
-assets/projects/blackpantherbatteries.png
-assets/projects/SparkBright.png
-
-# Exclude video from deployment
-video.mp4
+# Vercel ignore file - keep minimal exclusions
