@@ -28,7 +28,9 @@ export default defineConfig(({ mode }) => {
               icons: ['lucide-react']
             }
           }
-        }
+        },
+        // Ensure video files are handled correctly
+        assetsInlineLimit: 0,
       }
     };
 });

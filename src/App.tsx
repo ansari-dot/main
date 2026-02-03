@@ -164,6 +164,8 @@ const HomePage: React.FC<{ onNavigate: (p: string) => void; sliderWords: string[
         playsInline
       >
         <source src="/video.mp4" type="video/mp4" />
+        <source src="./video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/60 z-5"></div>
