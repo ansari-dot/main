@@ -6,7 +6,7 @@ import { Button } from './components/ui/Button';
 import Preloader from './components/Preloader';
 import { SERVICES, PROJECTS, ICON_MAP, CORE_VALUES, TESTIMONIALS, TEAM, TIMELINE } from './constants';
 import { PageID } from './types';
-import videoBg from './public/video.mp4';
+import videoBg from '/video.mp4';
 import { 
   ArrowRight, 
   ChevronRight, 

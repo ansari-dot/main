@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
 import { PageID } from '../types';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../public/logo.png';
+import logo from '/logo.png';
 
 interface NavbarProps {
   activeSection: string;

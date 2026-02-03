@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Twitter, Linkedin, Github, Mail, MapPin, Phone, Globe, Code2, ShieldCheck, Users, Rocket, ExternalLink, ArrowRight, Facebook, Instagram } from 'lucide-react';
-import logo from '../public/logo.png';
+import logo from '/logo.png';
 
 export const Footer: React.FC = () => {
   return (

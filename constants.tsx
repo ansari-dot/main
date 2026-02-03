@@ -22,27 +22,27 @@ import {
 import { Service, Project, Testimonial, Career } from './types';
 
 // Import all service images
-import webDevImg from './public/services/web.jpeg';
-import aiSolutionsImg from './public/services/AI.jpeg';
-import saasDevImg from './public/services/SaaS.jpeg';
-import marketingSeoImg from './public/services/SEO.jpeg';
-import canvaDesignImg from './public/services/Graphic.jpeg';
-import appDevImg from './public/services/App.jpeg';
-import cloudComputingImg from './public/services/Cloud.jpeg';
-import webScrapingImg from './public/services/Scapring.jpeg';
+import webDevImg from '/services/web.jpeg';
+import aiSolutionsImg from '/services/AI.jpeg';
+import saasDevImg from '/services/SaaS.jpeg';
+import marketingSeoImg from '/services/SEO.jpeg';
+import canvaDesignImg from '/services/Graphic.jpeg';
+import appDevImg from '/services/App.jpeg';
+import cloudComputingImg from '/services/Cloud.jpeg';
+import webScrapingImg from '/services/Scapring.jpeg';
 
 // Import all project images
-import aiTripAdvisorImg from './public/projects/TripAdviser.png';
-import shehrityImg from './public/projects/Shehrity.png';
-import eduPrepImg from './public/projects/EduPerp.png';
-import freelyGoNorthImg from './public/projects/FreelyGoNorth.png';
-import sparkBrightImg from './public/projects/SparkBright.png';
-import blackPantherBatteriesImg from './public/projects/blackpantherbatteries.png';
+import aiTripAdvisorImg from '/projects/TripAdviser.png';
+import shehrityImg from '/projects/Shehrity.png';
+import eduPrepImg from '/projects/EduPerp.png';
+import freelyGoNorthImg from '/projects/FreelyGoNorth.png';
+import sparkBrightImg from '/projects/SparkBright.png';
+import blackPantherBatteriesImg from '/projects/blackpantherbatteries.png';
 
 // Import team images
-import harisHussainImg from './public/team/HarisHussain.jpeg';
-import arsalanSaleemImg from './public/team/arsalansaleem.jpeg';
-import umarMustafaImg from './public/team/umar.jpeg';
+import harisHussainImg from '/team/HarisHussain.jpeg';
+import arsalanSaleemImg from '/team/arsalansaleem.jpeg';
+import umarMustafaImg from '/team/umar.jpeg';
 
 export const SERVICES: Service[] = [
   {
