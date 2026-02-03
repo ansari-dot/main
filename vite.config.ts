@@ -1,3 +1,4 @@
+// Vite config for 3Novator Tech - Updated for Vercel deployment
 import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
