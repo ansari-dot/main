@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Twitter, Linkedin, Github, Mail, MapPin, Phone, Globe, Code2, ShieldCheck, Users, Rocket, ExternalLink, ArrowRight, Facebook, Instagram } from 'lucide-react';
-import logo from '/logo.png';
 
 export const Footer: React.FC = () => {
   return (
@@ -20,7 +19,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-6">
             <div className="flex justify-start">
               <img 
-                src={logo} 
+                src="/logo.png" 
                 alt="3Novator Tech" 
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-300"
               />
@@ -148,7 +147,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
               <img 
-                src={logo} 
+                src="/logo.png" 
                 alt="3Novator Tech" 
                 className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-xl hover:scale-105 transition-transform duration-300"
               />
