@@ -6,6 +6,7 @@ import { Button } from './components/ui/Button';
 import Preloader from './components/Preloader';
 import { SERVICES, PROJECTS, ICON_MAP, CORE_VALUES, TESTIMONIALS, TEAM, TIMELINE } from './constants';
 import { PageID } from './types';
+import videoBg from './assets/video.mp4';
 import { 
   ArrowRight, 
   ChevronRight, 
@@ -163,8 +164,7 @@ const HomePage: React.FC<{ onNavigate: (p: string) => void; sliderWords: string[
         muted
         playsInline
       >
-        <source src="/video.mp4" type="video/mp4" />
-        <source src="./video.mp4" type="video/mp4" />
+        <source src={videoBg} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Overlay for better text readability */}

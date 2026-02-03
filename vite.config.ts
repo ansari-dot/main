@@ -31,6 +31,6 @@ export default defineConfig(({ mode }) => {
         },
         // Ensure video files are handled correctly
         assetsInlineLimit: 0,
-      }
+      },
     };
 });
