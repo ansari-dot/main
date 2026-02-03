@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
 import { PageID } from '../types';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../public/logo.png';
 
 interface NavbarProps {
   activeSection: string;
@@ -29,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate, isScr
         <div className={`hidden lg:flex mx-auto items-center justify-between px-10 rounded-3xl transition-all duration-500 ${isScrolled ? 'glass max-w-7xl shadow-realistic border-slate-200 py-2' : 'max-w-[90rem] bg-transparent backdrop-blur-0 shadow-none border-transparent py-8'} relative overflow-visible`}>
           <div className={`flex items-center gap-4 cursor-pointer group ${isScrolled ? '' : 'absolute left-10 top-1/2 -translate-y-1/2 z-10'}`} onClick={() => onNavigate(PageID.HOME)}>
             <motion.img 
-              src="/logo.png" 
+              src={logo} 
               alt="3Novator Tech" 
               className="h-auto w-auto"
               animate={{
@@ -71,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate, isScr
         <div className="flex lg:hidden items-center justify-between px-4 py-3 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-slate-200">
           <div className="flex items-center gap-3">
             <motion.img 
-              src="/logo.png" 
+              src={logo} 
               alt="3Novator Tech" 
               className="h-12 w-12 sm:h-14 sm:w-14"
               whileHover={{ scale: 1.1 }}
