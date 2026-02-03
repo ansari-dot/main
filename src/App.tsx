@@ -835,7 +835,7 @@ const ContactPage: React.FC = () => (
                    <div className="w-10 h-10 bg-brand-blueMedium rounded-xl flex items-center justify-center">
                       <MessageSquare size={20} className="text-white" />
                    </div>
-                   <h3 className="text-lg font-black text-slate-900 tracking-tight">Start Partnership</h3>
+                   <h3 className="text-lg font-black text-slate-900 tracking-tight">Get Started</h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                    <div className="space-y-4">
@@ -848,16 +848,16 @@ const ContactPage: React.FC = () => (
                    </div>
                 </div>
                 <div className="space-y-4">
-                   <label className="text-xs font-black text-slate-500 uppercase tracking-[0.2em] ml-2">Inquiry Type</label>
+                   <label className="text-xs font-black text-slate-500 uppercase tracking-[0.2em] ml-2">Service Interest</label>
                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      {['Web', 'AI', 'SaaS', 'Other'].map(type => (
+                      {['Web', 'Mobile', 'AI', 'Other'].map(type => (
                         <button key={type} type="button" className="py-3 rounded-xl border border-slate-200/50 bg-white/60 backdrop-blur-sm text-xs font-black text-slate-600 uppercase tracking-[0.1em] hover:border-brand-blueMedium hover:bg-brand-blueMedium hover:text-white transition-all shadow-sm active:scale-95">{type}</button>
                       ))}
                    </div>
                 </div>
                 <div className="space-y-4">
-                   <label className="text-xs font-black text-slate-500 uppercase tracking-[0.2em] ml-2">Project Objective</label>
-                   <textarea className="w-full border border-slate-200/50 bg-white/80 backdrop-blur-sm rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-brand-blueMedium/20 focus:border-brand-blueMedium text-slate-900 h-28 resize-none font-medium transition-all" placeholder="Describe your architectural constraints and objectives..."></textarea>
+                   <label className="text-xs font-black text-slate-500 uppercase tracking-[0.2em] ml-2">Project Details</label>
+                   <textarea className="w-full border border-slate-200/50 bg-white/80 backdrop-blur-sm rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-brand-blueMedium/20 focus:border-brand-blueMedium text-slate-900 h-28 resize-none font-medium transition-all" placeholder="Tell us about your project requirements and goals..."></textarea>
                 </div>
                 <Button className="w-full py-4 text-xs uppercase tracking-[0.3em] font-black rounded-xl bg-gradient-to-r from-brand-blueMedium to-brand-blueDeep hover:from-brand-blueLight hover:to-brand-blueMedium text-white shadow-lg hover:shadow-xl transition-all">Submit Now</Button>
              </form>
