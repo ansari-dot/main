@@ -22,25 +22,8 @@ dist-ssr
 # Vercel
 .vercel
 
-# Public folder (copy of assets)
-public/
-
-# Exclude images and videos from deployment
-assets/**/*.png
-assets/**/*.jpg
-assets/**/*.jpeg
-assets/**/*.gif
-assets/**/*.svg
-assets/**/*.ico
-assets/**/*.webp
-assets/**/*.mp4
-assets/**/*.webm
-assets/**/*.ogg
-assets/**/*.mp3
-assets/**/*.wav
-assets/**/*.flac
-assets/**/*.aac
-video.mp4
+# Keep public folder but exclude build artifacts
+# public/ should be included for assets
 
 # Editor directories and files
 .vscode/*
