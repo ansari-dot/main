@@ -167,10 +167,6 @@ const HomePage: React.FC<{ onNavigate: (p: string) => void; sliderWords: string[
         <source src={videoBg} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      {/* Debug: Show video URL */}
-      <div className="absolute top-4 left-4 bg-black/80 text-white p-2 text-xs z-50">
-        Video URL: {typeof videoBg}
-      </div>
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/60 z-5"></div>
       
