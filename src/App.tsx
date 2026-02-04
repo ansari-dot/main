@@ -409,10 +409,12 @@ const HomePage: React.FC<{ onNavigate: (p: string) => void; sliderWords: string[
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white mb-6">Ready to Transform Your Vision?</h2>
           <p className="text-lg md:text-xl text-white/95 font-light leading-relaxed max-w-3xl mx-auto mb-12">Let's build something extraordinary together. Our team is ready to architect your next digital success story.</p>
-          <StaggeredAnimation staggerDelay={0.1} direction="up">
-            <Button size="lg" className="rounded-xl px-10 py-4 text-lg bg-black text-white hover:bg-slate-800 shadow-xl hover:shadow-2xl transition-all mr-4" onClick={() => onNavigate(PageID.CONTACT)}>Start Your Project</Button>
-            <Button variant="outline" size="lg" className="rounded-xl px-10 py-4 text-lg bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20" onClick={() => onNavigate(PageID.PORTFOLIO)}>View Our Work</Button>
-          </StaggeredAnimation>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <StaggeredAnimation staggerDelay={0.1} direction="up">
+              <Button size="lg" className="rounded-xl px-10 py-4 text-lg bg-black text-white hover:bg-slate-800 shadow-xl hover:shadow-2xl transition-all" onClick={() => onNavigate(PageID.CONTACT)}>Start Your Project</Button>
+              <Button variant="outline" size="lg" className="rounded-xl px-10 py-4 text-lg bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20" onClick={() => onNavigate(PageID.PORTFOLIO)}>View Our Work</Button>
+            </StaggeredAnimation>
+          </div>
         </ScrollAnimation>
       </div>
     </section>
